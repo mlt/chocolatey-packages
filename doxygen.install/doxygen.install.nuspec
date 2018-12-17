@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>doxygen.install</id>
+    <version>1.8.14</version>
+    <title>Doxygen (Install)</title>
+    <authors>Dimitri van Heesch</authors>
+    <owners>mlt</owners>
+    <projectUrl>http://www.doxygen.nl</projectUrl>
+    <licenseUrl>http://www.doxygen.nl/manual/index.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C#, PHP, Java, Python, IDL (Corba, Microsoft, and UNO/OpenOffice flavors), Fortran, VHDL, Tcl, and to some extent D.</description>
+    <summary>Generate documentation from source code</summary>
+    <releaseNotes>https://www.doxygen.nl/manual/changelog.html</releaseNotes>
+    <copyright>Dimitri van Heesch</copyright>
+    <tags>development c++ java tool code source</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
