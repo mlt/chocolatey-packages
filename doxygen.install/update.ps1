@@ -1,16 +1,12 @@
 ﻿import-module au
-$NoCheckChocoVersion=1
-$root   = 'http://www.doxygen.nl'
-$releases = "$root/download.html"
+
+$releases = 'https://sourceforge.net/projects/doxygen/files'
 
 function global:au_SearchReplace {
   @{
-    ".\tools\chocolateyInclude.ps1" = @{
-      "(?i)(^\s*\`$url\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
-      "(?i)(^\s*\`$sha1\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
-    }
-    ".\doxygen.install.nuspec" = @{
-      "\<releaseNotes\>.+" = "<releaseNotes>$($Latest.ReleaseNotes)</releaseNotes>"
+    ".\tools\chocolateyInstall.ps1" = @{
+      "(^\s*Url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+      "(^\s*Checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
     }
   }
 }
@@ -18,19 +14,20 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
 
-  $re    = '^http.+\.exe$'
-  $url   = $download_page.links | ? href -match $re | select -First 1 -expand href
+  $re = 'rel-([\d\.]+)/$'
+  $path = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
+  $download_page = Invoke-WebRequest -UseBasicParsing -Uri "https://sourceforge.net/$path"
 
-  $version  = ($url -split '-' | select -Last 1 -Skip 1)
+  $re = '-setup\.exe/download$'
+  $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
-  $releaseNotesUrl = "$root/manual/changelog.html"
+  $version = ($url -split '-' | Select-Object -Last 1 -Skip 1)
 
   @{
-    URL32 = $url
-    Version = $version
-    ReleaseNotes = $releaseNotesUrl
+    URL32          = $url
+    Version        = $version
     ChecksumType32 = 'sha1'
   }
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32

@@ -1,3 +1,10 @@
-. (Join-Path (Split-Path -parent $MyInvocation.MyCommand.Definition) chocolateyInclude.ps1)
+$packageArgs = @{
+  PackageName  = 'doxygen.install'
+  FileType     = 'exe'
+  SilentArgs   = '/VERYSILENT'
+  Url          = 'http://doxygen.nl/files/doxygen-1.8.14-setup.exe'
+  Checksum     = ''
+  ChecksumType = 'sha1'
+}
 
-Install-ChocolateyPackage $package 'exe' '/VERYSILENT' $url -Checksum $sha1 -ChecksumType 'sha1'
+Install-ChocolateyPackage @packageArgs
