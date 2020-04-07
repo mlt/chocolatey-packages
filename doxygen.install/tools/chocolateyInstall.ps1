@@ -1,9 +1,9 @@
-$packageArgs = @{
+﻿$packageArgs = @{
   PackageName  = 'doxygen.install'
   FileType     = 'exe'
   SilentArgs   = '/VERYSILENT'
-  Url          = 'http://doxygen.nl/files/doxygen-1.8.14-setup.exe'
-  Checksum     = ''
+  Url          = 'https://sourceforge.net/projects/doxygen/files/rel-1.8.17/doxygen-1.8.17-setup.exe/download'
+  Checksum     = '1ef86daf5d41f56fa62d827027dda291968cd1dc'
   ChecksumType = 'sha1'
 }
 
