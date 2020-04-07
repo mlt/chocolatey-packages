@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>graphviz.portable</id>
+    <version>2.38</version>
+    <title>Graphviz (Portable)</title>
+    <authors>Arif Bilgin,graphviz committers</authors>
+    <owners>mlt</owners>
+    <licenseUrl>http://www.graphviz.org/license</licenseUrl>
+    <projectUrl>http://www.graphviz.org/</projectUrl>
+    <iconUrl>https://graphviz.gitlab.io/_pages/Resources/app.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <releaseNotes>https://gitlab.com/graphviz/graphviz/-/raw/master/ChangeLog</releaseNotes>
+    <description><![CDATA[Graph Visualization Software includes several layout programs that take descriptions of graphs in a simple text language, and make diagrams in useful formats, such as images and SVG for web pages, PDF or Postscript for inclusion in other documents; or display in an interactive graph browser.
+Graphviz also supports GXL, an XML dialect.
+
+<dl>
+  <dt>acyclic</dt> <dd>make directed graph acyclic</dd>
+  <dt>bcomps</dt><dd>biconnected components filter for graphs</dd>
+  <dt>ccomps</dt><dd>connected components filter for graphs</dd>
+  <dt>circo</dt><dd>filter for circular layout of graphs</dd>
+  <dt>diffimg</dt><dd>Calculates intersection between two images</dd>
+  <dt>dijkstra</dt><dd>single-source distance filter</dd>
+  <dt>dot</dt><dd>filter for drawing directed graphs</dd>
+  <dt>dotty</dt><dd>A Customizable Graph Editor</dd>
+  <dt>fdp</dt><dd>filter for drawing undirected graphs</dd>
+  <dt>gc</dt><dd>count graph components</dd>
+  <dt>gml2gv</dt><dd>GML-DOT converter</dd>
+  <dt>graphml2gv</dt><dd>GRAPHML-DOT converter</dd>
+  <dt>gv2gml</dt><dd>DOT-GML converter</dd>
+  <dt>gvcolor</dt><dd>flow colors through a ranked digraph (previously known as colorize)</dd>
+  <dt>gvedit</dt><dd>simple graph editor and viewer</dd>
+  <dt>gvgen</dt><dd>generate graphs</dd>
+  <dt>gvmap</dt><dd>find clusters and create a geographical map highlighting clusters</dd>
+  <dt>gvpack</dt><dd>merge and pack disjoint graphs</dd>
+  <dt>gvpr</dt><dd>graph pattern scanning and processing language</dd>
+  <dt>gxl2gv</dt><dd>GXL-GV converters</dd>
+  <dt>lefty</dt><dd>A Programmable Graphics Editor</dd>
+  <dt>lneato</dt><dd>A Customizable Graph Editor</dd>
+  <dt>mm2gv</dt><dd>Matrix Market-DOT converters</dd>
+  <dt>neato</dt><dd>filter for drawing undirected graphs</dd>
+  <dt>nop</dt><dd>pretty-print graph file</dd>
+  <dt>osage</dt><dd>filter for array-based layouts</dd>
+  <dt>patchwork</dt><dd>filter for squarified tree maps</dd>
+  <dt>sccmap</dt><dd>extract strongly connected components of directed graphs</dd>
+  <dt>sfdp</dt><dd>filter for drawing large undirected graphs</dd>
+  <dt>smyrna</dt><dd>interactive graph viewer</dd>
+  <dt>tred</dt><dd>transitive reduction filter for directed graphs</dd>
+  <dt>twopi</dt><dd>filter for radial layouts of graphs</dd>
+  <dt>unflatten</dt><dd>adjust directed graphs to improve layout aspect ratio</dd>
+</dl>]]></description>
+    <tags>drawing graph visualization</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
