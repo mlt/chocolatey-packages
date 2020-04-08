@@ -27,4 +27,6 @@ function global:au_GetLatest {
   }
 }
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+
 update -ChecksumFor 32 -NoCheckChocoVersion
