@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>geosetter.install</id>
-    <version>3.5.2</version>
+    <version>3.5.3</version>
     <title>GeoSetter (Install)</title>
     <authors>Friedemann Schmidt</authors>
     <owners>mlt, mfopp</owners>
