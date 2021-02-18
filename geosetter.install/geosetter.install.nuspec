@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>geosetter.install</id>
+    <version>3.5.2</version>
+    <title>GeoSetter (Install)</title>
+    <authors>Friedemann Schmidt</authors>
+    <owners>mlt, mfopp</owners>
+    <licenseUrl>https://geosetter.de/en/imprint-en/</licenseUrl>
+    <projectUrl>https://geosetter.de/en/main-en/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>GeoSetter is a freeware tool for Windows (XP or higher) for showing and changing geo data and other metadata (IPTC/XMP/Exif) of image files (e.g. images taken by digital cameras)</description>
+    <summary>Image geotagging software</summary>
+    <releaseNotes>https://www.geosetter.de/mantis/changelog_page.php</releaseNotes>
+    <copyright>Friedemann Schmidt</copyright>
+    <tags>image photo picture geotag</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
