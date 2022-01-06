@@ -3,7 +3,7 @@
   FileType     = 'exe'
   SilentArgs   = '/VERYSILENT'
   Url          = 'https://sourceforge.net/projects/doxygen/files/rel-1.9.3/doxygen-1.9.3-setup.exe/download'
-  Checksum     = '24fd29b4476ad1197a41438efcd67b926db923cd'
+  Checksum     = '83f7241dfb44c5bb271072792379bcb539284247'
   ChecksumType = 'sha1'
 }
 
