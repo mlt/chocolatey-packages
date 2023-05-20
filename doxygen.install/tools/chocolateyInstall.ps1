@@ -2,8 +2,8 @@
   PackageName  = 'doxygen.install'
   FileType     = 'exe'
   SilentArgs   = '/VERYSILENT'
-  Url          = 'https://sourceforge.net/projects/doxygen/files/rel-1.9.6/doxygen-1.9.6-setup.exe/download'
-  Checksum     = 'b067278b94d044e0bf20ef3737408681196a72cf'
+  Url          = 'https://sourceforge.net/projects/doxygen/files/rel-1.9.7/doxygen-1.9.7-setup.exe/download'
+  Checksum     = 'f726620d31d60ab8424b21a6751a36681342eb83'
   ChecksumType = 'sha1'
 }
 
